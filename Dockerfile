@@ -10,7 +10,7 @@ ENV NIFI_HOME /usr/local/lib/nifi-${NIFI_VERSION}
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 # Install Java 7
-RUN apt-get update && apt-get install -y --no-recommends openjdk-7-jre
+RUN apt-get update && apt-get install -y --no-install-recommends openjdk-7-jre
 
 # Install wget and tar
 RUN apt-get install -y wget tar
