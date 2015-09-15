@@ -14,7 +14,7 @@ This Nifi docker image offers quick and easy setup of Nifi.
 * Execute ```nifi.sh start``` to start the Nifi process
 
 ### Example to run a container
-    docker run -it -P dataramar/nifi:0.2.1 /bin/bash
+    docker run -it -P dataramar/nifi /bin/bash
     
 ### Accessing Nifi WebUI
 Nifi uses port 8080 by default. The container exposes 8080, so with the "-P" option you should be able to use the mapped port.
