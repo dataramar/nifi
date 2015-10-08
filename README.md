@@ -1,4 +1,4 @@
-#Apache Nifi
+##Apache Nifi
 
 For more information on [Apache Nifi](https://nifi.apache.org/index.html)
 
@@ -11,7 +11,14 @@ This Nifi docker image offers quick and easy setup of Apache Nifi.
   * docker -it -P dataramar/nifi:<tag> /bin/bash
 
 ### Start Nifi in the container
-* Execute ```nifi.sh start``` to start the Nifi process
+* Docker image build process automatically starts the Nifi service.
+* If Nifi service is not runnning manually execute ```nifi.sh start``` to start the Nifi process int he tty.
+
+### Using proxy
+* To add http_proxy enviornment variable to Dockerfile:
+ * Add ```ENV http_proxy http://your/proxy:port```
+* To add http_proxy enviornment variable at docker run:
+ * ```docker run -d -P -e http_proxy=http://proxy:port dataramar/nifi```
 
 ### Example to run a container
     docker run -it -P dataramar/nifi /bin/bash
