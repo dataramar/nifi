@@ -5,7 +5,7 @@ MAINTAINER ram<ram.ramavath@live.com>
 
 # Environment variables 
 ENV NIFI_VERSION 0.3.0
-ENV NIFI_HOME /usr/local/lib/nifi-${NIFI_VERSION}
+ENV NIFI_HOME /usr/local/lib/nifi/nifi-${NIFI_VERSION}
 
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
@@ -23,7 +23,7 @@ RUN rm /usr/local/lib/nifi/nifi-${NIFI_VERSION}-bin.tar.gz
 # Add Nifi to PATH
 ENV PATH $PATH:$NIFI_HOME/bin
 
-RUN echo "#!/bin/bash" > start.sh && echo "nifi.sh start" >> start.sh
+RUN echo "#!/bin/bash" > start.sh && echo "Starting Nifi..." >> start.sh && echo "nifi.sh start" >> start.sh
 CMD ["bash start.sh"]
 
 # Expose Nifi default port 8080
