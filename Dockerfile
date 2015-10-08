@@ -23,7 +23,7 @@ RUN rm /usr/local/lib/nifi/nifi-${NIFI_VERSION}-bin.tar.gz
 # Add Nifi to PATH
 ENV PATH $PATH:$NIFI_HOME/bin
 
-RUN echo "#!/bin/bash" > start.sh && echo "Starting Nifi..." >> start.sh && echo "nifi.sh start" >> start.sh 
+RUN echo "#!/bin/bash" > start.sh && echo "nifi.sh start" >> start.sh 
 RUN bash start.sh
 
 # Expose Nifi default port 8080
