@@ -21,8 +21,9 @@ This Nifi docker image offers quick and easy setup of Apache Nifi.
  * ```docker run -d -P -e http_proxy=http://proxy:port dataramar/nifi```
 
 ### Example to run a container
-    docker run -it -P dataramar/nifi /bin/bash
-    
+    > docker run -it -P dataramar/nifi /bin/bash
+    > nifi.sh start
+
 ### Accessing Nifi WebUI
 Nifi uses port 8080 by default. The container exposes 8080, so with the "-P" option you should be able to use the mapped port.
 * ***URL syntax:*** ```http://host:port/nifi```
