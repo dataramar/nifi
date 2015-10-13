@@ -1,10 +1,9 @@
 # Apache Nifi
 
-For more information on [Apache Nifi](https://nifi.apache.org/index.html)
+This docker image offers a simple, quick and easy setup of Apache Nifi. For more information on [Apache Nifi](https://nifi.apache.org/index.html)
 
 ### Getting the Image
-Use docker pull or Dockerfile to get Nifi image.
-This Nifi docker image offers quick and easy setup of Apache Nifi.
+Use **docker pull** or **Dockerfile** to get Nifi image. The image uses Ubunutu 14.04 as base OS.
 
 ### Starting the container
 * Start container using "-i" and "-t" option
