@@ -11,7 +11,7 @@ Use **docker pull** or **Dockerfile** to get Nifi image. The image uses Ubunutu 
 
 ### Start Nifi in the container
 * Docker image build process automatically starts the Nifi service.
-* If Nifi service is not runnning manually execute ```nifi.sh start``` to start the Nifi process int he tty.
+* If Nifi service is not runnning manually execute ```nifi.sh start``` to start the Nifi process in the tty.
 
 ### Using proxy
 * To add http_proxy enviornment variable to Dockerfile:
